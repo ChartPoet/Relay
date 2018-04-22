@@ -2,14 +2,14 @@
 const { DataSource } = require('../lib/data_sources/data_source');
 
 (async () => {
-  const schema = await DataSource.query('POSTGRES_SQL', {
+  const schema = await DataSource.query('MY_SQL', {
     host: 'localhost',
-    port: '5342',
-    user: 'gauravt',
+    port: '3306',
+    user: 'root',
     password: 'allahabad',
-    database: 'sampleapp_development',
+    database: 'chartpress',
   }, {
-    query: `SELECT COUNT(*) AS count_all, "events"."category" AS events_category FROM "events" GROUP BY "events"."category"`,
+    query: `select post_type, count(post_type) from wp_posts group by post_type`,
   });
   console.log(JSON.stringify(schema));
 })();
