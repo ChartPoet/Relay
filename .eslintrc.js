@@ -4,6 +4,7 @@ module.exports = {
         "func-names": "off",
         "global-require": "off",
         "class-methods-use-this": "off",
+        "no-restricted-syntax": "off",
         "import/no-extraneous-dependencies": ["error", {"devDependencies": false, "optionalDependencies": false, "peerDependencies": false}]
     },
     "env": {
