@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "bin": {
-    "chartpoet-relay": "./bin/test.js"
+    "chartpoet-relay": "./bin/cli.js"
   },
   "devDependencies": {
     "chai": "^4.1.2",
@@ -17,6 +17,7 @@
     "supertest": "^3.0.0"
   },
   "dependencies": {
+    "async": "^2.6.0",
     "bcrypt": "^2.0.1",
     "body-parser": "^1.18.2",
     "chalk": "^2.4.0",
@@ -24,7 +25,9 @@
     "cookie-parser": "^1.4.3",
     "cookie-session": "^2.0.0-beta.3",
     "csurf": "^1.9.0",
+    "ejs": "^2.5.9",
     "express": "^4.16.3",
+    "formic": "^0.0.5",
     "inquirer": "^5.2.0",
     "knex": "^0.14.6",
     "lodash": "^4.17.5",
