@@ -2,15 +2,15 @@
 const { DataSource } = require('../lib/data_sources/data_source');
 
 (async () => {
-  /*
-  const schema = await DataSource.query('MY_SQL', {
+  
+  const schema = await DataSource.schema('MY_SQL', {
     host: 'localhost',
-    port: '3306',
+    port: '33061',
     user: 'root',
     password: 'allahabad',
     database: 'chartpress',
   }, {
     query: `select post_type, count(post_type) from wp_posts group by post_type`,
   });
-  console.log(JSON.stringify(schema));*/
+  console.log(JSON.stringify(schema));
 })();
