@@ -2,14 +2,14 @@
 const { DataSource } = require('../lib/data_sources/data_source');
 
 (async () => {
-  const schema = await DataSource.query('MY_SQL', {
+  const schema = await DataSource.query('POSTGRES_SQL', {
     host: 'localhost',
-    port: '3306',
-    user: 'root',
+    port: '5432',
+    user: 'gauravt',
     password: 'allahabad',
-    database: 'chartpress',
+    database: 'sampleapp_development',
   }, {
-    query: `select ID  from wp_posts`,
+    query: `SELECT id FROM "events" LIMIT 50`,
   });
-  console.log('Schema is' ,JSON.stringify(schema));
+  console.log('Schema is' , JSON.stringify(schema));
 })();

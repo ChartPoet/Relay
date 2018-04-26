@@ -29,6 +29,7 @@
     "express": "^4.16.3",
     "formic": "^0.0.5",
     "inquirer": "^5.2.0",
+    "knex": "^0.14.6",
     "lodash": "^4.17.5",
     "minimist": "^1.2.0",
     "morgan": "^1.9.0",
@@ -37,6 +38,7 @@
     "mysql2": "^1.5.3",
     "nedb": "^1.8.0",
     "pg": "^7.4.1",
+    "pg-query-stream": "^1.1.1",
     "shortid": "^2.2.8",
     "uppercamelcase": "^3.0.0"
   },
