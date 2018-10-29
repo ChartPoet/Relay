@@ -18,6 +18,7 @@
   },
   "dependencies": {
     "async": "^2.6.0",
+    "axios": "^0.18.0",
     "bcrypt": "^2.0.1",
     "body-parser": "^1.18.2",
     "chalk": "^2.4.0",
@@ -27,7 +28,7 @@
     "csurf": "^1.9.0",
     "ejs": "^2.5.9",
     "express": "^4.16.3",
-    "formic": "^0.0.5",
+    "formic": "^0.0.10",
     "inquirer": "^5.2.0",
     "knex": "^0.14.6",
     "lodash": "^4.17.5",
